@@ -1,0 +1,27 @@
+extends ./../layouts/main
+
+block variables
+	-var title = "Стартовый шаблон | ВебКадеми - Документация";
+
+block content
+
+block header
+	-
+		var links = [
+			{
+				name: "Главная",
+				link: "index.html",
+			},
+			{
+				name: "Документация",
+				link: "docs.html",
+				actClass: 'active',
+			},
+		]
+	include ./../sections/header
+
+block content
+	include ./../docs/docs
+
+block footer
+	include ./../sections/footer

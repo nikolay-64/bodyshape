@@ -1,0 +1,12 @@
+mixin group-grid(items)
+	.section-groups-grid
+		each item in items
+			.card-group
+				img(class=item.className src="./img/groups/"+ item.imgName +".jpg" alt=item.altName)
+				|
+				|
+				a(href="#!").card-group-link #{item.title}
+			|
+			|
+	|
+	|

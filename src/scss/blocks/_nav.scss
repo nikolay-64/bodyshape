@@ -1,0 +1,28 @@
+.nav {
+	font-size: 18px;
+
+	// & li:active {
+	// 	color: black !important;
+	// }
+}
+.nav__list {
+	display: flex;
+	column-gap: 30px;
+
+	transition: all 0.2s ease-in;
+
+	li.active {
+		a {
+			color: var(--link-active) !important;
+		}
+	}
+
+}
+
+a.active {
+	color: black;
+
+	&:active {
+		color: rgba(0, 0, 0, .7);
+	}
+}

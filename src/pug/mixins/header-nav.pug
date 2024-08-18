@@ -1,0 +1,19 @@
+-
+	var links = [
+		{
+			name: "Главная",
+			link: "index.html",
+			actClass: 'active',
+		},
+		{
+			name: "Документация",
+			link: "docs.html",
+			actClass: false,
+		},
+	]
+mixin header-nav(args)
+	ul.nav__list
+			each link in links
+				li
+					a(href=""+link.link
+					class= (link.actClass ? ''+ link.actClass : '')) #{link.name}

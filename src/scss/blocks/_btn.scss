@@ -1,0 +1,29 @@
+.btn {
+	display: inline-block;
+	border-radius: 7px;
+	width: 214px;
+	height: 52px;
+
+	padding: 18px 46px 15px;
+
+	background-color: #ffd479;
+
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: 19px;
+	letter-spacing: 5px;
+	line-height: 1;
+	color: #000;
+
+	text-align: center;
+	transition: background-color 0.3s ease-in-out;
+	
+
+	&:hover {
+		background-color: #fcc54e;
+	}
+
+	&:active {
+		background-color: #fcc54e;
+	}
+}

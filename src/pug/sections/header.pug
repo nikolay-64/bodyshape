@@ -1,0 +1,15 @@
+header.header.none
+	.container
+		.header__row
+			.logo ВебКадеми
+
+			nav.header__nav.nav
+				+header-nav([
+					{link: "index.html",name: "Главная", actClass: 'active'},
+					{link: "docs.html",name: "Документация"},
+				])
+
+			button.mobile-nav-btn.none
+				.nav-icon
+
+//- include ./../blocks/mobile-nav

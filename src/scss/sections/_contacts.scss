@@ -1,0 +1,29 @@
+.contacts {
+	height: 861px;
+
+	display: flex;
+	align-items: center;
+
+	background-image: image-set(
+		url('./../img/contacts/contact-form-bg.jpg') 1x,
+		url('./../img/contacts/contact-form-bg@2x.jpg') 2x
+	);
+
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.contacts-content {
+	max-width: 585px;
+	margin: 0 auto;
+}
+
+.contacts-title {
+	margin-bottom: 40px;
+	
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: 70px;
+	letter-spacing: 4px;
+	color: #ffd479;
+}

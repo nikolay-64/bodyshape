@@ -1,0 +1,36 @@
+.section {
+	padding: 150px 0;
+}
+
+.section-header {
+	margin: 0 auto;
+	padding-bottom: 50px;
+
+	text-align: center;
+	max-width: 800px;
+	text-wrap: wrap;
+}
+
+.section-title {
+	color: var(--text-accent);
+
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: 96px;
+}
+
+.section-desc {
+	font-weight: 300;
+	font-size: 16px;
+	line-height: 200%;
+
+	&--text-wp-b {
+		text-wrap: balance;
+	}
+}
+
+.section-trainers-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 35px 30px;
+}

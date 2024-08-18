@@ -1,0 +1,5 @@
+.section-groups-grid {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 105px 32px;
+}

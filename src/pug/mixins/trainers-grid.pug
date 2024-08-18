@@ -1,0 +1,8 @@
+mixin trainers-grid(items)
+	.section-trainers-grid
+		each item in items
+			a(href=item.link class=item.linkName)
+				.card-trainer-name #{item.cardName}
+				img(class=item.className src="./img/trainers/"+ item.imgName +".jpg", alt=item.altName)
+			|
+			|

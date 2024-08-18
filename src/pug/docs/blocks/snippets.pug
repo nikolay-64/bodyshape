@@ -1,0 +1,47 @@
+section
+	.container
+		h2.title-2 Полезные сниппеты
+
+		p
+			| Сниппеты хранятся в папке 
+			code .vscode
+			| в файле 
+			code webCademy.code-snippets
+
+		h4.title-4 SCSS cниппеты для медиазапросов
+
+		p
+			| Код вызова: 
+			code tablet
+		pre.code.
+			@include tablet { ... }
+
+		p
+			| Код вызова: 
+			code mobile
+		pre.code.
+			@include mobile { ... }
+
+		p
+			| Retina background-image через медиа запрос. Код вызова: 
+			code mediaBg
+		pre.code.
+			@include mediaBg() {
+			background-image: url('./../img/example@2x.jpg');
+			}
+
+		p
+			| Retina background-image через image-set. Код вызова:  
+			code imgSet
+		pre.code.
+			background-image: image-set(
+			url('./../img/bg.jpg') 1x,
+			url('./../img/bg@2x.jpg') 2x);
+
+		h4.title-4 HTML cниппет для svg иконок из спрайта
+
+		p
+			| Код вызова: 
+			code svgIcon
+		include _htmlcode
+

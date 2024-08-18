@@ -1,0 +1,8 @@
+mixin footer-socials(items, alink="#!")
+	ul.footer-socials
+		each item in items
+			li
+				a(href=alink target="_blank")
+						img(src="./img/socials/"+ item.imgName +".svg", alt=item.fLink)
+			|
+			|

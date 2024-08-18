@@ -1,0 +1,15 @@
+include ./mixins.pug
+
+block variables
+	-var title = "BodyShape";
+
+doctype html
+html(lang="ru")
+	include ../blocks/head
+	
+	body
+		block header
+		block content
+		block footer
+		script(src="./js/index.bundle.js")
+		block scripts

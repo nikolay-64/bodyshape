@@ -1,0 +1,40 @@
+.card-group {
+	position: relative;
+	display: grid;
+	gap: 25px;
+
+	transition: opacity 0.3s ease-in-out;
+
+	&:hover {
+		opacity: 0.5;
+	}
+}
+
+.card-group-img {
+	border-radius: 20px;
+	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+
+	// opacity: 1;
+
+	// &:hover {
+	// 	opacity: 0.5;
+	// }
+}
+
+.card-group-link {
+	font-family: var(--font-accent);
+	font-weight: 700;
+	font-size: 43px;
+	letter-spacing: 3px;
+	color: #ffd479;
+
+	&::after {
+		content: '';
+
+		position: absolute;
+		left: 0;
+		top: 0;
+		width: 100%;
+		height: 100%;
+	}
+}

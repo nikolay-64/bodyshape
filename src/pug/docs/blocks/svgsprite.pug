@@ -1,0 +1,50 @@
+-
+	var icons = [
+		{
+			link: 'heart-line',
+			postfix: "heart-line"
+		},
+		{
+			link: 'id-card-line',
+			postfix: "id-card-line"
+		},
+		{
+			link: 'search-line',
+			postfix: "search-line"
+		},
+		{
+			link: 'user-star-line',
+			postfix: "user-star"
+		},
+	]
+
+	var instructions = [
+		{
+			text: "Иконки размещаем в папку: ",
+			code: "src/img/svgicons"
+		},
+		{
+			text: "Готовый файл со спрайтом собирается в: ",
+			code: "build/img/svgsprite/sprite.symbol.svg"
+		},
+	]
+
+section
+	.container
+		h2.title-2 SVG спрайты
+
+		.icons-wrapper
+			each icon in icons
+				svg(class="icon icon--" + icon.postfix)
+					use(href='./img/svgsprite/sprite.symbol.svg#' + icon.link)
+
+		each instruction in instructions
+			p
+				= instruction.text 
+				code= instruction.code
+
+			h4.title-4 HTML код
+			include _htmlcode
+
+			h4.title-4 CSS CSS код
+			include _csscode

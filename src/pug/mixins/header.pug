@@ -1,0 +1,15 @@
+mixin header(args)
+	header.header
+		.container
+			.header__row
+				.logo ВебКадеми
+
+				nav.header__nav.nav
+					ul.nav__list
+						each link in args
+							li
+								a(href=" "+link.link 
+								class=(link.actClass ? ''+ link.actClass : '')) #{link.name}
+
+				button.mobile-nav-btn
+					.nav-icon

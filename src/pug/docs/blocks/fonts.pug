@@ -1,0 +1,15 @@
+section
+	.container
+		h2.title-2 Автогенерация шрифтов и CSS подключения
+
+		ol
+			li Размещаем TTF и OTF шрифты в #[code src/fonts/]
+			li При запуске сборки OTF конвертируется в TTF внутри #[code src/fonts/].
+			li Затем TTF в WOFF и WOFF2 из #[code src/fonts/] в #[code build/fonts/].
+			li Генерируются CSS стили подключения внутри #[code src/scss/base/_fontsAutoGen.scss].#[br] Важно! Этот файл генерируется и перезаписывается автоматически.
+		
+		p.
+
+			Пример:
+		p.font-1 Hello, world! Привет, мир!
+		p.font-2 Hello, world! Привет, мир!

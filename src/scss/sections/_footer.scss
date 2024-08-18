@@ -1,0 +1,26 @@
+.footer {
+	background-color: #1F2A32;
+	padding: 70px 0;
+	font-size: 14px;
+    color: #fff;
+
+}
+
+.footer-socials {
+	margin-bottom: 30px;
+
+	display: flex;
+	align-items: center;
+	gap: 50px;
+}
+
+.footer-contacts {
+	display: flex;
+	gap: 50px;
+
+	max-width: 585px;
+
+	font-size: 14px;
+	font-weight: 300;
+	line-height: 200%;
+}

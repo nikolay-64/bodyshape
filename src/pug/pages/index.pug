@@ -1,0 +1,27 @@
+extends ./../layouts/main
+
+block header
+	//- include ./../sections/header
+	include ./../sections/hero
+	|
+	|
+
+block content
+	main
+		include ./../sections/trainers
+		|
+		|
+		include ./../sections/beast
+		|
+		|
+		include ./../sections/groups-programs
+		|
+		|
+		include ./../sections/contacts
+	
+block footer
+	|
+	|
+	include ./../sections/footer
+	|
+	|
