@@ -15,6 +15,21 @@
 		justify-content: space-between;
 		align-items: center;
 	}
+
+	@include desktop {
+		height: 560px;
+	}
+
+	@include mobile {
+		height: 440px;
+		padding-top: 15px;
+	}
+
+	@include mobile-xs {
+		height: 240px;
+		padding-top: 5px;
+		background-position: -20px center;
+	}
 }
 
 .hero__list {
@@ -35,9 +50,25 @@
 		opacity: 0.8;
 		border-bottom: 1px solid var(--text-color);
 	}
+
+	@include mobile {
+		display: none;
+	}
 }
 
-.header-img {
+.hero-img {
 	padding-top: 125px;
 	text-align: right;
+
+	@include desktop {
+		padding-top: 36px;
+	}
+
+	@include tablet {
+		padding-top: 25px;
+	}
+
+	@include mobile {
+		display: none;
+	}
 }

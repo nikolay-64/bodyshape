@@ -13,8 +13,8 @@
     padding-top: 40px;
     padding-bottom: 40px;
     // background: linear-gradient(209deg, #4287b3 -17.38%, #133f6b 78.4%), #276195;
-	background: #8ccae6;
-	transition: all 0.2s ease-in;
+	background: #1F2A32;
+	transition: all 0.3s ease-in-out;
 }
 
 .mobile-nav--open {
@@ -23,11 +23,11 @@
 
 .mobile-nav a {
 	color: #fff;
-	transition: all 0.5s ease-in;
+	transition: all 0.3s ease-in-out;
 	
 
 	&:hover {
-		color: #000;
+		color: rgb(0, 216, 245);
 		opacity: 0.5;
 	}
 }

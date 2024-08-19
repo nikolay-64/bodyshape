@@ -1,9 +1,12 @@
 .footer {
-	background-color: #1F2A32;
+	background-color: #1f2a32;
 	padding: 70px 0;
 	font-size: 14px;
-    color: #fff;
+	color: #fff;
 
+	@include mobile {
+		padding: 40px 0;
+	}
 }
 
 .footer-socials {
@@ -12,6 +15,10 @@
 	display: flex;
 	align-items: center;
 	gap: 50px;
+
+	@include desktop {
+		justify-content: center;
+	}
 }
 
 .footer-contacts {
@@ -23,4 +30,16 @@
 	font-size: 14px;
 	font-weight: 300;
 	line-height: 200%;
+
+	@include desktop {
+		max-width: unset;
+		justify-content: center;
+	}
+
+	@include mobile {
+		flex-direction: column;
+		gap: 30px;
+		max-width: 250px;
+		margin: 0 auto;
+	}
 }

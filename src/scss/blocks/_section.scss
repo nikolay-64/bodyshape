@@ -1,5 +1,13 @@
 .section {
 	padding: 150px 0;
+
+	@include desktop {
+		padding: 100px 0;
+	}
+
+	@include mobile {
+		padding: 50px 0;
+	}
 }
 
 .section-header {
@@ -9,6 +17,11 @@
 	text-align: center;
 	max-width: 800px;
 	text-wrap: wrap;
+
+	@include tablet {
+		max-width: 400px;
+		margin-bottom: 30px;
+	}
 }
 
 .section-title {
@@ -17,6 +30,19 @@
 	font-family: var(--font-accent);
 	font-weight: 700;
 	font-size: 96px;
+	width: 96%;
+
+	@include desktop {
+		width: unset;
+	}
+
+	@include mobile {
+		font-size: 48px;
+	}
+
+	@include mobile-xs {
+		font-size: 24px;
+	}
 }
 
 .section-desc {
@@ -27,10 +53,29 @@
 	&--text-wp-b {
 		text-wrap: balance;
 	}
+
+	@include mobile-xs {
+		font-size: 14px;
+	}
 }
 
 .section-trainers-grid {
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 35px 30px;
+
+	@include tablet {
+		grid-template-columns: repeat(4, 177px);
+		justify-content: center;
+	}
+
+	@include mobile {
+		grid-template-columns: repeat(2, 184px);
+		justify-items: center;
+		gap: 30px;
+	}
+
+	@include mobile-xs {
+		grid-template-columns: 1fr;
+	}
 }

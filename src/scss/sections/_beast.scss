@@ -3,7 +3,7 @@
 	height: 750px;
 
 	display: flex;
-    align-items: center;
+	align-items: center;
 
 	background-image: image-set(
 		url('./../img/beast/beast-bg.jpg') 1x,
@@ -44,6 +44,23 @@
 		background-size: 100%;
 		background-repeat: no-repeat;
 		background-position: left bottom;
+
+		@include mobile {
+			bottom: -2px;
+		}
+	}
+
+	@include desktop {
+		height: 560px;
+	}
+
+	@include mobile {
+		height: 400px;
+	}
+
+	@include mobile-xs {
+		height: 285px;
+		text-align: center;
 	}
 }
 
@@ -54,6 +71,18 @@
 	font-weight: 700;
 	font-size: 75px;
 	letter-spacing: 7.5px;
+
+	@include desktop {
+		font-size: 60px;
+	}
+
+	@include mobile {
+		font-size: 30px;
+	}
+
+	@include mobile-xs {
+		font-size: 18px;
+	}
 }
 
 .beast-desc {
@@ -62,4 +91,17 @@
 	font-size: 22px;
 	line-height: 150%;
 	text-wrap: wrap;
+
+	@include desktop {
+		font-size: 18px;
+	}
+
+	@include mobile {
+		width: 395px;
+		font-size: 14px;
+	}
+
+	@include mobile-xs {
+		width: unset;
+	}
 }

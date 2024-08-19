@@ -12,12 +12,13 @@ body {
 	text-wrap: balance;
 }
 
-// img {
-// 	display: block;
-// }
-
 a {
 	color: var(--link-color);
+}
+
+.main {
+	flex-grow: 1;
+	overflow-y: hidden;
 }
 
 code {

@@ -11,11 +11,36 @@
 
 	background-repeat: no-repeat;
 	background-size: cover;
+
+	@include desktop {
+		height: 615px;
+	}
+
+	@include tablet {
+		height: 600px;
+	}
+
+	@include mobile {
+		height: 460px;
+	}
+
+	@include mobile-xs {
+		height: 300px;
+        background-position: -90px center;
+	}
 }
 
 .contacts-content {
 	max-width: 585px;
 	margin: 0 auto;
+
+	@include tablet {
+		max-width: 310px;
+	}
+
+	@include mobile-xs {
+		max-width: 240px;
+	}
 }
 
 .contacts-title {
@@ -26,4 +51,13 @@
 	font-size: 70px;
 	letter-spacing: 4px;
 	color: #ffd479;
+
+	@include desktop {
+		font-size: 35px;
+		margin-bottom: 20px;
+	}
+
+	@include mobile-xs {
+		font-size: 25px;
+	}
 }

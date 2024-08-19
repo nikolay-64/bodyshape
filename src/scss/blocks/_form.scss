@@ -2,6 +2,10 @@
 	color: #fff;
 	display: grid;
 	gap: 30px;
+
+	@include tablet {
+		gap: 15px;
+	}
 }
 
 .form-group {
@@ -12,6 +16,10 @@
 .label {
 	font-size: 16px;
 	font-weight: 700;
+
+	@include mobile-xs {
+		font-size: 14px;
+	}
 }
 
 .input {
@@ -20,6 +28,10 @@
 
 	padding-bottom: 9px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+	@include mobile-xs {
+		padding-bottom: 0;
+	}
 }
 
 .textarea {
@@ -31,4 +43,12 @@
 	font-size: 16px;
 	font-weight: 300;
 	line-height: 150%;
+
+	@include tablet {
+		height: 100px;
+	}
+
+	@include mobile-xs {
+		height: 50px;
+	}
 }

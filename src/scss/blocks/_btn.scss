@@ -18,6 +18,14 @@
 	text-align: center;
 	transition: background-color 0.3s ease-in-out;
 	
+	@include mobile {
+		width: 120px;
+		height: 26px;
+		padding: 10px 15px 20px;
+		font-size: 16px;
+		letter-spacing: 1px;
+	}
+
 
 	&:hover {
 		background-color: #fcc54e;

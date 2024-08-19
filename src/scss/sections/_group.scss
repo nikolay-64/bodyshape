@@ -2,4 +2,21 @@
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
 	gap: 105px 32px;
+
+	@include tablet {
+		grid-template-columns: repeat(4, 185px);
+		gap: 53px 30px;
+		justify-content: center;
+	}
+
+	@include mobile {
+		grid-template-columns: repeat(2, 180px);
+        gap: 30px;
+        justify-content: center;
+        text-align: center;
+	}
+
+	@include mobile-xs {
+		grid-template-columns: 1fr;
+	}
 }

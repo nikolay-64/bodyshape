@@ -1,12 +1,25 @@
-+hero([
-	{link: '#!', name: 'Инструкторы'},
-	{link: '#!', name: 'Секции'},
-	{link: '#!', name: 'Новости'},
-	{link: '#!', name: 'Контакты'},
-])
-
-
-		//-- button.mobile-nav-btn
-		//--	.nav-icon
-
-//- include ./../blocks/mobile-nav
+header.hero
+	.container
+		nav.hero-row
+			img.hero-logo(src="./img/hero/logo.png", alt="Логотип")
+			|
+			|
+			|
+			+hero([
+				{link: '#!', name: 'Инструкторы'},
+				{link: '#!', name: 'Секции'},
+				{link: '#!', name: 'Новости'},
+				{link: '#!', name: 'Контакты'},
+			])
+			|
+			|
+			|
+			button.mobile-nav-btn
+				.nav-icon
+		|
+		|
+		.hero-img
+			img(src="./img/hero/hero-logo.png" alt="Логотип")
+	|
+	|
+	include ./../blocks/mobile-nav

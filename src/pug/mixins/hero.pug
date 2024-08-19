@@ -1,18 +1,9 @@
 mixin hero(args)
-	header.hero
-		.container
-			nav.hero-row
-				img.hero-logo(src="./img/hero/logo.png", alt="Логотип")
-				|
-				|
-				|
-				ul.hero__list
-					each link in args
-						li
-							a(href=" "+link.link 
-							class=(link.actClass ? ''+ link.actClass : '')) #{link.name}
-			|
-			|
-			|
-			.header-img
-				img(src="./img/hero/hero-logo.png" alt="Логотип")
+	ul.hero__list
+		each link in args
+			li
+				a(href=" "+link.link 
+				class=(link.actClass ? ''+ link.actClass : '')) #{link.name}
+	|
+	|
+	|

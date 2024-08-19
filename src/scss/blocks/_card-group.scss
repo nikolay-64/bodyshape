@@ -13,12 +13,6 @@
 .card-group-img {
 	border-radius: 20px;
 	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
-
-	// opacity: 1;
-
-	// &:hover {
-	// 	opacity: 0.5;
-	// }
 }
 
 .card-group-link {
@@ -36,5 +30,9 @@
 		top: 0;
 		width: 100%;
 		height: 100%;
+	}
+
+	@include tablet {
+		font-size: 30px;
 	}
 }
