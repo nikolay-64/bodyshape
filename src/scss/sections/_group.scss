@@ -16,6 +16,11 @@
         text-align: center;
 	}
 
+	@include mobile-l {
+		grid-template-columns: repeat(2, 170px);
+        gap: 15px;
+	}
+
 	@include mobile-xs {
 		grid-template-columns: 1fr;
 	}

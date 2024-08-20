@@ -37,7 +37,6 @@
 	top: 60%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	
 
 	font-family: var(--font-accent);
 	font-weight: 700;
@@ -45,4 +44,15 @@
 	color: #fff;
 
 	transition: all 0.3s ease-in-out;
+
+	@include mobile-l {
+		font-size: 26px;
+		text-wrap: nowrap;
+	}
+}
+
+.card-trainer-img {
+	@include mobile-xs {
+		height: 290px;
+	}
 }

@@ -13,6 +13,10 @@
 .card-group-img {
 	border-radius: 20px;
 	box-shadow: 0 4px 15px 0 rgba(0, 0, 0, 0.2);
+
+	@include mobile-xs {
+		height: 206px;
+	}
 }
 
 .card-group-link {
@@ -34,5 +38,9 @@
 
 	@include tablet {
 		font-size: 30px;
+	}
+
+	@include mobile-l {
+		font-size: 25px;
 	}
 }

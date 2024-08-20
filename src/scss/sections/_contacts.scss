@@ -24,9 +24,14 @@
 		height: 460px;
 	}
 
+	@include mobile-l {
+		height: 320px;
+		background-position: -60px center;
+	}
+
 	@include mobile-xs {
 		height: 300px;
-        background-position: -90px center;
+		background-position: -90px center;
 	}
 }
 
@@ -38,6 +43,10 @@
 		max-width: 310px;
 	}
 
+	@include mobile-l {
+		max-width: 290px;
+	}
+
 	@include mobile-xs {
 		max-width: 240px;
 	}
@@ -45,7 +54,7 @@
 
 .contacts-title {
 	margin-bottom: 40px;
-	
+
 	font-family: var(--font-accent);
 	font-weight: 700;
 	font-size: 70px;
@@ -55,6 +64,10 @@
 	@include desktop {
 		font-size: 35px;
 		margin-bottom: 20px;
+	}
+
+	@include mobile-l {
+		font-size: 30px;
 	}
 
 	@include mobile-xs {

@@ -58,9 +58,13 @@
 		height: 400px;
 	}
 
+	@include mobile-l {
+		height: 300px;
+		text-align: center;
+	}
+
 	@include mobile-xs {
 		height: 285px;
-		text-align: center;
 	}
 }
 
@@ -99,6 +103,10 @@
 	@include mobile {
 		width: 395px;
 		font-size: 14px;
+	}
+
+	@include mobile-l {
+		width: 390px;
 	}
 
 	@include mobile-xs {

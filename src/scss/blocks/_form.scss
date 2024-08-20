@@ -6,6 +6,10 @@
 	@include tablet {
 		gap: 15px;
 	}
+
+	@include mobile-l {
+		gap: 5px;
+	}
 }
 
 .form-group {
@@ -17,7 +21,7 @@
 	font-size: 16px;
 	font-weight: 700;
 
-	@include mobile-xs {
+	@include mobile-l {
 		font-size: 14px;
 	}
 }
@@ -28,6 +32,12 @@
 
 	padding-bottom: 9px;
 	border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+
+	@include mobile-l {
+		font-size: 14px;
+		font-weight: 300;
+		padding-bottom: 5px;
+	}
 
 	@include mobile-xs {
 		padding-bottom: 0;
@@ -48,7 +58,7 @@
 		height: 100px;
 	}
 
-	@include mobile-xs {
+	@include mobile-l {
 		height: 50px;
 	}
 }
